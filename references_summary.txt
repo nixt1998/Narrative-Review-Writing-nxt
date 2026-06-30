@@ -1,0 +1,168 @@
+================================================================================
+REFERENCES SUMMARY — Narrative Review Writing Skill Research Basis
+================================================================================
+Sorted by: JCR Journal Quartile (Q1 > Q2 > Q3), then Impact Factor (high > low)
+Data source: 2023 Journal Citation Reports (JCR) — approximate values
+Generated: 2026-06-30
+================================================================================
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Q1 JOURNALS (Top 25% in category)                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. [REF 9] Page MJ, Moher D, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD,
+   et al. PRISMA 2020 explanation and elaboration: updated guidance and
+   exemplars for reporting systematic reviews. BMJ. 2021;372:n160.
+   DOI: 10.1136/bmj.n160
+   Journal: BMJ-British Medical Journal
+   JCR Quartile: Q1 | IF: ~107.7 (2023)
+   Category: Medicine, General & Internal (1/325)
+   Key contribution: PRISMA 2020 reporting standards
+
+2. [REF 5] Balon R. What is a review article and what are its purpose,
+   attributes, and goal(s). Psychother Psychosom. 2022;91(3):152-155.
+   DOI: 10.1159/000522385
+   Journal: Psychotherapy and Psychosomatics
+   JCR Quartile: Q1 | IF: ~13.0 (2023)
+   Category: Psychiatry (SCI); Psychology, Clinical (SSCI)
+   Key contribution: Review article definition, typology, purpose
+
+3. [REF 8] Harris JD, Quatman CE, Manring MM, Siston RA, Flanigan DC.
+   How to write a systematic review. Am J Sports Med. 2014;42(11):2761-2768.
+   DOI: 10.1177/0363546513497567
+   Journal: American Journal of Sports Medicine
+   JCR Quartile: Q1 | IF: ~7.0 (2023)
+   Category: Orthopedics; Sport Sciences
+   Key contribution: PRISMA guidelines, PROSPERO registration, evidence grading
+
+4. [REF 1] Dhillon P. How to write a good scientific review article.
+   FEBS J. 2022;289(13):3592-3602.
+   DOI: 10.1111/febs.16565
+   Journal: FEBS Journal
+   JCR Quartile: Q1 | IF: ~5.5 (2023)
+   Category: Biochemistry & Molecular Biology
+   Key contribution: Scope checklist, core components table, figure Box 1
+
+5. [REF 3] Pautasso M. Ten simple rules for writing a literature review.
+   PLoS Comput Biol. 2013;9(7):e1003149.
+   DOI: 10.1371/journal.pcbi.1003149
+   Journal: PLoS Computational Biology
+   JCR Quartile: Q1 | IF: ~5.0 (2023)
+   Category: Mathematical & Computational Biology; Biochemistry
+   Key contribution: 10 rules: notes-while-reading, critical/consistent, feedback
+
+6. [REF 7] Wright RW, Brand RA, Dunn W, Spindler KP. How to write a
+   systematic review. Clin Orthop Relat Res. 2007;455:23-29.
+   DOI: 10.1097/BLO.0b013e31802c9098
+   Journal: Clinical Orthopaedics and Related Research
+   JCR Quartile: Q1 | IF: ~4.0 (2023)
+   Category: Orthopedics; Surgery
+   Key contribution: PICO framework, research protocol, evidence hierarchy
+
+7. [REF 12] Randles R, Finnegan A. Guidelines for writing a systematic review.
+   Nurse Educ Today. 2023;125:105803.
+   DOI: 10.1016/j.nedt.2023.105803
+   Journal: Nurse Education Today
+   JCR Quartile: Q1 | IF: ~3.5 (2023)
+   Category: Nursing (SCI); Education, Scientific Disciplines (SSCI)
+   Key contribution: SR guidelines for nursing, Cochrane/JBI frameworks
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Q2 JOURNALS (Top 25%-50% in category)                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+8. [REF 13] Livschitz J, Dream S. How to write a systematic review.
+   Am J Surg. 2023;226(4):553-555.
+   DOI: 10.1016/j.amjsurg.2023.04.009
+   Journal: American Journal of Surgery
+   JCR Quartile: Q2 | IF: ~3.0 (2023)
+   Category: Surgery
+   Key contribution: 6 steps to SR, PICO, common pitfalls for first-time authors
+
+9. [REF 10] Paez A. Gray literature: an important resource in systematic reviews.
+   J Evid Based Med. 2017;10(3):233-240.
+   DOI: 10.1111/jebm.12266
+   Journal: Journal of Evidence-Based Medicine
+   JCR Quartile: Q2 | IF: ~2.5 (2023)
+   Category: Medicine, General & Internal
+   Key contribution: Gray literature search strategies, publication bias reduction
+
+10. [REF 2] Chaney MA. So you want to write a narrative review article?
+    J Cardiothorac Vasc Anesth. 2021;35(10):3045-3049.
+    DOI: 10.1053/j.jvca.2021.06.017
+    Journal: Journal of Cardiothoracic and Vascular Anesthesia
+    JCR Quartile: Q2 | IF: ~2.3 (2023)
+    Category: Anesthesiology; Cardiac & Cardiovascular Systems
+    Key contribution: NR 3 quality standards, NR vs SR, retrograde search
+
+11. [REF 6] Goodfellow LT. An overview of how to search and write a medical
+    literature review. Respir Care. 2023;68(11):1576-1584.
+    DOI: 10.4187/respcare.11398
+    Journal: Respiratory Care
+    JCR Quartile: Q2 | IF: ~2.0 (2023)
+    Category: Respiratory System; Critical Care Medicine
+    Key contribution: 7 stages of lit review, database selection, search optimization
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Q3 JOURNALS (Top 50%-75% in category)                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+12. [REF 4] Gasparyan AY, Ayvazyan L, Blackmore H, Kitas GD. Writing a
+    narrative biomedical review: considerations for authors, peer reviewers,
+    and editors. Rheumatol Int. 2011;31(11):1409-1417.
+    DOI: 10.1007/s00296-011-1999-3
+    Journal: Rheumatology International
+    JCR Quartile: Q3 | IF: ~2.0 (2023)
+    Category: Rheumatology
+    Key contribution: NR biomedical specifically, authorship/ethics, peer review
+
+13. [REF 11] Pati D, Lorusso LN. How to write a systematic review of the
+    literature. HERD. 2018;11(1):15-30.
+    DOI: 10.1177/1937586717747384
+    Journal: HERD: Health Environments Research & Design Journal
+    JCR Quartile: Q3 | IF: ~1.8 (2023)
+    Category: Health Care Sciences & Services; Architecture
+    Key contribution: SLR methodology in healthcare design, quality assessment
+
+================================================================================
+
+SUMMARY STATISTICS
+================================================================================
+
+Total references:           13
+Q1 journals:                 7  (53.8%)
+Q2 journals:                 4  (30.8%)
+Q3 journals:                 2  (15.4%)
+Q4 journals:                 0  (0.0%)
+Highest IF:                 BMJ (~107.7)
+Lowest IF:                  HERD (~1.8)
+Median IF:                   ~3.0
+Year range:                 2007 - 2023
+
+================================================================================
+
+NOTE ON GRAY LITERATURE
+================================================================================
+
+Reference [10] (Paez 2017, J Evid Based Med) discusses gray literature search
+methodologies. While this reference informed our understanding of comprehensive
+literature searching, the narrative-review skill's protocol operates exclusively
+on data from verified, peer-reviewed published literature. No content from gray
+literature sources (preprints, conference abstracts, theses, government reports,
+etc.) is incorporated into the manuscript unless the user explicitly provides
+and verifies such sources through the standard PDF verification pipeline.
+
+================================================================================
+
+NOTE ON IMPACT FACTOR VALUES
+================================================================================
+
+Impact factor values are approximate and based on 2023 Journal Citation Reports
+(Clarivate Analytics). Actual IF values may vary across editions and years.
+Quartile rankings are based on the journal's primary JCR category. Some journals
+appear in multiple categories with different quartile rankings; the highest
+quartile is used for sorting.
+
+================================================================================
+End of Reference Summary
+================================================================================
