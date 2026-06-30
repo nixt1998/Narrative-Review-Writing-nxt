@@ -295,5 +295,5 @@ MIT — 详见 [LICENSE](LICENSE)。
 ---
 
 <p align="center">
-  <sub>为严谨、可复现的科学写作而构建。</sub>
+  <sub>为 ❤️ 严谨、可复现的科学写作而构建。</sub>
 </p>
