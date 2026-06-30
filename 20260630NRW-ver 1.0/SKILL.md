@@ -1,6 +1,6 @@
 ---
 name: narrative-review
-description: Use when writing an English narrative review article in clinical pharmacology or basic pharmacological mechanism research. Triggers on: narrative review, literature review, review article, write a review, state-of-the-art review, scientific review, 综述写作, 叙述性综述. Covers complete workflow from topic scoping through search strategy, literature verification, knowledge graph construction, framework building, section-by-section writing, figure/table generation, and final manuscript assembly. NOT for systematic reviews or meta-analyses (use PRISMA-based workflows for those).
+description: "Use when writing an English narrative review article in clinical pharmacology or basic pharmacological mechanism research. Triggers when user mentions: narrative review, literature review, review article, write a review, state-of-the-art review, scientific review, 综述写作, 叙述性综述. Covers complete workflow from topic scoping through search strategy, literature verification, knowledge graph construction, framework building, section-by-section writing, figure/table generation, and final manuscript assembly. NOT for systematic reviews or meta-analyses (use PRISMA-based workflows for those)."
 ---
 
 # Narrative Review Writing
