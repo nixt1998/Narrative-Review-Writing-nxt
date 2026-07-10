@@ -560,7 +560,7 @@ Questions, suggestions, or collaboration ideas are welcome.
 | Name | Institution | Role |
 |------|-------------|------|
 | Xiaoting Ni | School of Pharmacy, Qiqihar Medical University; Department of Pharmacy, The First Affiliated Hospital of Harbin Medical University | Creator and Lead Developer |
-| [Your Name] | [Your Institution / Affiliation] | [Contributor Role] |
+| Wenyu Fu | School of Pharmacy, Qiqihar Medical University | v2.1Optimization |
 | [Research Group / Team Name] | [Institution] | [Team Contribution Description] |
 
 We welcome contributions from pharmacologists, pharmaceutical scientists, clinical pharmacists, and AI researchers. Whether it is improving the workflow, adding domain-specific knowledge, fixing issues, or extending support to new citation formats -- your expertise matters.

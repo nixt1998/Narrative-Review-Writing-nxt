@@ -484,7 +484,7 @@ narrative-review/
 | 姓名 | 单位 | 贡献角色 |
 |---|---|---|
 | 倪啸庭 (Xiaoting Ni) | School of Pharmacy, Qiqihar Medical University; Dept. of Pharmacy, The First Affiliated Hospital of Harbin Medical University | 创始人 & Lead Developer |
-| [您的姓名] | [您的单位] | [贡献描述] |
+| 傅文瑜 (Wenyu Fu) | School of Pharmacy, Qiqihar Medical University | v2.1优化 |
 | [团队名] | [所属单位] | [团队贡献] |
 
 我们欢迎来自药理学、临床药学和 AI 领域的贡献，无论是改进工作流、增加领域知识，还是修复问题。
