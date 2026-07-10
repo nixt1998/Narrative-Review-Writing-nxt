@@ -25,7 +25,7 @@
 
 **19 workflow steps · 40 curated requirements · 30 NLM citation types · 13 methodology papers · Zero fabricated references**
 
-> ⭐ If this skill supports your research, please star this repository to show your support!
+> ⭐⭐ If this skill supports your research, please star⭐ this repository to show your support!⭐⭐
 
 </div>
 
