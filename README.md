@@ -110,42 +110,42 @@ Each feature is a deliberate design choice grounded in identified failure modes 
 **1. Dynamic Anti-Hallucination Protocol**
 Every citation must trace to a user-provided, verified PDF. Unverifiable references are excluded outright -- not retained with a warning.
 *Why it matters:* AI citation hallucination is well-documented in academic contexts. A single fabricated reference undermines the entire manuscript.
-*Rationale:* PMID/DOI cross-validation + three-pass verification (Steps 3.0, 5.0, 9.0). See [SKILL.md Step 3.1](SKILL.md).
+*Rationale:* PMID/DOI cross-validation + three-pass verification (Steps 3.0, 5.0, 9.0). See [SKILL.md Step 3.1](<20260710NRW-ver 2.1/SKILL.md#31-dynamic-batch-verification-protocol-updated>).
 
 **2. Dynamic N-Based Batch Verification**
 Verification intensity scales with your target reference count N. If N < 35, every paper is verified individually (100% coverage). If N >= 35, batches activate at the N/2 mark with >= 50% audit per batch, rounded up.
 *Why it matters:* Fixed thresholds either over-sample small reviews or under-sample large ones.
-*Rationale:* Proportional audit design ensures consistent coverage regardless of review size. See [SKILL.md Step 3.1](SKILL.md).
+*Rationale:* Proportional audit design ensures consistent coverage regardless of review size. See [SKILL.md Step 3.1](<20260710NRW-ver 2.1/SKILL.md#31-dynamic-batch-verification-protocol-updated>).
 
 **3. Obsidian Knowledge Graph**
 After verification, each paper becomes a structured Obsidian note with wikilinks; theme notes and MOC maps are auto-generated for visual graph exploration.
 *Why it matters:* Loading 100+ PDFs directly into an AI context window overflows any model's capacity.
-*Rationale:* Claude reads vault notes in strict order (MOC -> themes -> papers) during writing, never loading all papers simultaneously. See [SKILL.md Step 3.5](SKILL.md).
+*Rationale:* Claude reads vault notes in strict order (MOC -> themes -> papers) during writing, never loading all papers simultaneously. See [SKILL.md Step 3.5](<20260710NRW-ver 2.1/SKILL.md#step-35---obsidian-vault-generation-updated>).
 
 **4. Section Brief Before Every Section Draft**
 Before writing each section, Claude outputs a Section Brief: writing logic, core argument, evidence basis, and word budget.
 *Why it matters:* Articulating the section's logical role before prose is generated catches structural errors before they are written into 500 words of text.
-*Rationale:* Forces explicit argument design; enables user to redirect before investment is made. See [SKILL.md Step 5.0](SKILL.md).
+*Rationale:* Forces explicit argument design; enables user to redirect before investment is made. See [SKILL.md Step 5.0](<20260710NRW-ver 2.1/SKILL.md#step-50---section-by-section-writing-updated>).
 
 **5. Batched Output Protocol**
 Large outputs (literature notes, section drafts, reference lists) are split into platform-appropriate batches with continuation markers [OUTPUT PART X/N].
 *Why it matters:* Claude app, Claude terminal, and DeepSeek have different output token limits. Unconstrained output risks mid-response truncation that permanently loses work.
-*Rationale:* Platform-calibrated batch sizes recorded at Step 0.0b; all large-output steps apply the protocol. See [SKILL.md Batched Output Protocol](SKILL.md).
+*Rationale:* Platform-calibrated batch sizes recorded at Step 0.0b; all large-output steps apply the protocol. See [SKILL.md Batched Output Protocol](<20260710NRW-ver 2.1/SKILL.md#batched-output-protocol-new>).
 
 **6. Multi-Database Reproducible Search Record**
 Searches across PubMed, Web of Science, ScienceDirect, Wiley Online Library, and Embase (user-selectable). Full reproducibility record includes search date, database versions, exact Boolean queries, and pre/post-deduplication counts (9 items total).
 *Why it matters:* Reproducibility is a core scientific value; peer reviewers increasingly request full search documentation.
-*Rationale:* Step 2.8 nine-item record allows independent search replication. See [SKILL.md Step 2.8](SKILL.md).
+*Rationale:* Step 2.8 nine-item record allows independent search replication. See [SKILL.md Step 2.8](<20260710NRW-ver 2.1/SKILL.md#28-full-search-reproducibility-record-new>).
 
 **7. Gene and Protein Nomenclature Enforcement**
 Human genes ALL CAPS italics (HGNC), mouse/rat genes first-cap lowercase italics (MGI), proteins non-italic (UniProt) -- verified before writing.
 *Why it matters:* Nomenclature errors are a frequent cause of editorial desk rejection in pharmacological journals.
-*Rationale:* Verification against HGNC, GeneCards, MGI, UniProt enforced in writing rules. See [SKILL.md Core Rules](SKILL.md).
+*Rationale:* Verification against HGNC, GeneCards, MGI, UniProt enforced in writing rules. See [SKILL.md Core Rules](<20260710NRW-ver 2.1/SKILL.md#core-rules-updated>).
 
 **8. Standalone Word Outputs per Manuscript Component**
 Figure legends, tables, and abbreviations table are each output as separate .docx files with correct journal formatting, in addition to the main manuscript.
 *Why it matters:* Most pharmacology journals require tables and figures submitted as separate files; inline inclusion causes submission errors.
-*Rationale:* Three standalone .docx files (06_figure_legends.docx, 07_tables_standalone.docx, 10_abbreviations.docx). See [SKILL.md Steps 7.0, 8.0, 10.3](SKILL.md).
+*Rationale:* Three standalone .docx files (06_figure_legends.docx, 07_tables_standalone.docx, 10_abbreviations.docx). See [SKILL.md Steps 7.0, 8.0, 10.3](<20260710NRW-ver 2.1/SKILL.md#step-70---figure-instructions--legends-updated>).
 
 **9. Full Vancouver/NLM Citation Ruleset**
 Internal vancouver-guide.md contains all 30 NLM document-type formats, punctuation rules, date conventions, and appendixes from Citing Medicine (NLM, 2007, updated 2020).
@@ -155,7 +155,7 @@ Internal vancouver-guide.md contains all 30 NLM document-type formats, punctuati
 **10. Session Run Log with Full Audit Trail**
 A run log (pipeline_output/run_log.md) created at Step 0.0 records every user input, action, output file, and timestamp throughout the session.
 *Why it matters:* Long review sessions can be interrupted; the log enables exact reconstruction of what was decided and when.
-*Rationale:* Global rule applies to all 19 steps. See [SKILL.md Step 0.0](SKILL.md).
+*Rationale:* Global rule applies to all 19 steps. See [SKILL.md Step 0.0](<20260710NRW-ver 2.1/SKILL.md#step-00---language-selection-new>).
 
 ---
 
