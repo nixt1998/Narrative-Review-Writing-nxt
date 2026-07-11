@@ -111,37 +111,37 @@
 **1. 动态防幻觉协议**
 特色：每条引用必须可追溯至用户提供的已验证 PDF，无法核验的引用直接排除，而非附以警告保留。
 重要性：AI 引用幻觉在学术领域有充分记录。一条虚构引用就能破坏整个稿件的可信度。
-依据：PMID/DOI 交叉验证 + 三轮核验（Step 3.0 + 5.0 + 9.0）。详见 [SKILL.md Step 3.0](SKILL.md)
+依据：PMID/DOI 交叉验证 + 三轮核验（Step 3.0 + 5.0 + 9.0）。详见 [SKILL.md Step 3.0](<20260710NRW-ver 2.1/SKILL.md#step-30---literature-verification--reading-notes-updated>)
 
 **2. 动态N基分批核验**
 特色：验证强度随目标参考文献数量 N 动态调整。若 N < 35，逐篇核验每篇文献（覆盖率 100%）；若 N ≥ 35，则在 N/2 处启动分批机制，每批抽检比例不低于 50%，且向上取整。
 重要性：固定阈值对小规模综述过度抽查，对大规模综述覆盖不足。
-依据：比例式分配，确保任意规模综述均具一致覆盖。详见 [SKILL.md Step 3.1](SKILL.md)
+依据：比例式分配，确保任意规模综述均具一致覆盖。详见 [SKILL.md Step 3.1](<20260710NRW-ver 2.1/SKILL.md#31-dynamic-batch-verification-protocol-updated>)
 
 **3. Obsidian 知识图谱**
 特色：验证完成后，每篇文献自动生成具双向链接的 Obsidian 笔记；主题和 MOC 映射自动生成。
 重要性：直接将 100+ 篇文献全部加载入 AI 上下文将导致溢出。
-依据：受控 MOC → 主题 → 笔记顺序读取。详见 [SKILL.md Step 3.5](SKILL.md)
+依据：受控 MOC → 主题 → 笔记顺序读取。详见 [SKILL.md Step 3.5](<20260710NRW-ver 2.1/SKILL.md#step-35---obsidian-vault-generation-updated>)
 
 **4. 段落前 Section Brief**
 特色：写作每个段落前，Claude 输出当前段落的 Section Brief，包含写作逻辑、核心论点、证据依据、字数预算。
 重要性：在生成文本前强制论证段落逻辑，及早发现结构错误。
-依据：强制显式参数设计；允许用户在投入资源前进行重定向。详见 [SKILL.md Step 5.0](SKILL.md)
+依据：强制显式参数设计；允许用户在投入资源前进行重定向。详见 [SKILL.md Step 5.0](<20260710NRW-ver 2.1/SKILL.md#step-50---section-by-section-writing-updated>)
 
 **5. 分批输出协议**
 特色：大体输出按平台分批分发，带续传标记 [OUTPUT PART X/N]。
 重要性：Claude app、Claude terminal 和 DeepSeek 有不同的 token 输出上限，无限制输出将导致内容丢失。
-依据：平台分批大小在 Step 0.0b 记录。详见 [SKILL.md Batched Output Protocol](SKILL.md)
+依据：平台分批大小在 Step 0.0b 记录。详见 [SKILL.md Batched Output Protocol](<20260710NRW-ver 2.1/SKILL.md#batched-output-protocol-new>)
 
 **6. 多数据库可复现检索记录**
 特色：支持 PubMed / WOS / ScienceDirect / Wiley / Embase，完整记录包含检索日期、数据库版本、完整 Boolean 查询字符串及去重前后结果计数（9 项）。
 重要性：可复现性是科学的核心价值，同行评审者日益要求提供完整检索记录。
-依据：步骤2.8：九项记录支持独立搜索复制。详见 [SKILL.md Step 2.8](SKILL.md)
+依据：步骤2.8：九项记录支持独立搜索复制。详见 [SKILL.md Step 2.8](<20260710NRW-ver 2.1/SKILL.md#28-full-search-reproducibility-record-new>)
 
 **7. 基因/蛋白质命名规范**
 特色：人类基因全大写斜体（HGNC），小鼠基因首字母大写余小写斜体（MGI），蛋白质非斜体（UniProt），写作前核验。
 重要性：命名错误是药学期刊投稿被拒的常见原因之一。
-依据：HGNC / GeneCards / MGI / UniProt。详见 [SKILL.md Core Rules](SKILL.md)
+依据：HGNC / GeneCards / MGI / UniProt。详见 [SKILL.md Core Rules](<20260710NRW-ver 2.1/SKILL.md#core-rules-updated>)
 
 **8. 独立模块 Word 输出**
 特色：除主文稿外，图注、表格及缩略词表均按目标期刊格式分别导出为独立的word文件。
@@ -156,7 +156,7 @@
 **10. 运行日志与审计跟踪**
 特色：pipeline_output/run_log.md 记录每个步骤的用户输入、操作、输出文件及时间戳。
 重要性：长时间会话可能被中断，日志支持精确重建决策内容。
-依据：全局规则适用于全部 19 步骤。详见 [SKILL.md Step 0.0](SKILL.md)
+依据：全局规则适用于全部 19 步骤。详见 [SKILL.md Step 0.0](<20260710NRW-ver 2.1/SKILL.md#step-00---language-selection-new>)
 
 ---
 
@@ -453,7 +453,7 @@ Claude: Step 0.0 -> 0.0b -> 0.1 -> 0.5 -> 0.9 -> 1.0 -> 2.0 -> 3.0 -> 3.5
 | Gasparyan AY (2011) | Rheumatol Int Q3 | 生物医学NR，作者伦理 |
 | Patrias K (NLM 2007) | NLM书籍 | 30种引用类型 |
 
-详见[references.md](references.md) | [references_summary.txt](references_summary.txt)
+详见[references.md](<20260710NRW-ver 2.1/references.md>) | [references_summary.txt](references_summary.txt)
 
 ---
 
