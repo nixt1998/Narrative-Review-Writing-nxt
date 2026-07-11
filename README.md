@@ -498,7 +498,7 @@ plus the authoritative NLM citation style guide.
 
 **Reference Format Authority:** Patrias K. Citing Medicine: The NLM Style Guide for Authors, Editors, and Publishers. 2nd ed. Bethesda (MD): NLM; 2007. Updated 2020. [PDF](Citing%20Medicine-The%20NLM%20Style%20Guide%20for%20Authors%2C%20Editors%2C%20and%20Publishers.pdf) | [Online](https://www.ncbi.nlm.nih.gov/books/NBK7256/)
 
-See **[references.md](references.md)** for full citations and **[references_summary.txt](references_summary.txt)** for journal quartile/IF ranking.
+See **[references.md](<20260710NRW-ver 2.1/references.md>)** for full citations and **[references_summary.txt](<20260710NRW-ver 2.1/references_summary.txt>)** for journal quartile/IF ranking.
 
 ---
 
