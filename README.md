@@ -82,7 +82,7 @@ At every critical juncture — framework locking, section acceptance, reference 
 
 ## Comparative Advantages
 
-| Dimension | Manual Writing | Full Automation | Other Claude Skills | NRW Skill v2.1 |
+| Dimension | Manual Writing | Full Automation | Other Skills | NRW v2.1 |
 |-----------|:---:|:---:|:---:|:---:|
 | Zero fabricated references | ✅ | ❌ | ⚠️ | ✅✅ |
 | Citation triple-verification (3 passes) | ⚠️ | ❌ | ❌ | ✅ |
@@ -110,7 +110,7 @@ Each feature is a deliberate design choice grounded in identified failure modes 
 **1. Dynamic Anti-Hallucination Protocol**
 Every citation must trace to a user-provided, verified PDF. Unverifiable references are excluded outright -- not retained with a warning.
 *Why it matters:* AI citation hallucination is well-documented in academic contexts. A single fabricated reference undermines the entire manuscript.
-*Rationale:* PMID/DOI cross-validation + three-pass verification (Steps 3.0, 5.0, 9.0). See [SKILL.md](SKILL.md).
+*Rationale:* PMID/DOI cross-validation + three-pass verification (Steps 3.0, 5.0, 9.0). See [SKILL.md Step 3.1](SKILL.md).
 
 **2. Dynamic N-Based Batch Verification**
 Verification intensity scales with your target reference count N. If N < 35, every paper is verified individually (100% coverage). If N >= 35, batches activate at the N/2 mark with >= 50% audit per batch, rounded up.
@@ -165,7 +165,7 @@ A run log (pipeline_output/run_log.md) created at Step 0.0 records every user in
 
 - Provide a structured 19-step workflow from topic selection to final manuscript
 - Enforce anti-hallucination protocols so every citation is traceable to a verified source
-- Manage references across large literature sets (50-150 papers) without context overflow
+- Manage references across large literature sets (100+ papers) without context overflow
 - Generate a Section Brief before each draft -- articulating writing logic, core argument, and evidence basis
 - Verify gene/protein symbols against HGNC, MGI, and UniProt standards before writing
 - Format references in Vancouver/NLM (default), AMA, APA, or journal-specific styles
@@ -244,7 +244,7 @@ Figures           : 3
 Tables            : 2
 Target references : 100                  (default: 100)
 Citation format   : Vancouver            (or: AMA / APA / journal-specific)
-Target journal    : [Journal name, e.g., Pharmacological Research]
+Target journal    : [Journal name, e.g., Cell, Nature, Science, Lancet]
 ```
 
 **Step 2.0 -- Search Strategy**

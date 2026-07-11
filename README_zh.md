@@ -21,9 +21,9 @@
 
 <div align="center">
 
-# Narrative Review Writing Skill · 临床药理学与基础药理机制研究
+# 叙述性综述写作Skill · 临床药理学与基础药理机制研究
 
-### 为药学领域严谨、可复现、循证据的叙述性综述写作，提供结构化人机协作工作流，基于NLM范式与13篇同行评审方法学文献
+### 为药学领域严谨、可复现、可循证的叙述性综述写作，提供结构化人机协作工作流，基于NLM范式与13篇同行评审方法学文献
 
 **19 个工作流步骤 · 40 条需求规范 · 30 种NLM引用类型 · 13 篇方法学文献 · 零虚构引用**
 
@@ -82,7 +82,7 @@
 
 ## 优势对比
 
-| 维度 | 纯手动 | 全自动 | 其他Skill | NRW v2.1 |
+| 维度 | 纯手动 | 全自动 | 其他 Skills | NRW v2.1 |
 |---|:---:|:---:|:---:|:---:|
 | 零虚构引用 | ✅ | ❌ | ⚠️ | ✅✅ |
 | 引用三轮核验(3 Pass) | ⚠️ | ❌ | ❌ | ✅ |
@@ -98,7 +98,7 @@
 | 独立Word模块输出 | ❌ | ❌ | ❌ | ✅ |
 | 全程审计日志 | ❌ | ❌ | ❌ | ✅ |
 | 保留科学判断 | ✅ | ❌ | ⚠️ | ✅ |
-| 耗时 | 很高 | 很低 | 中等 | 中等 |
+| 耗时 | 很高 | 极低 | 低 | 中等 |
 
 ✅ 完全支持 · ⚠️ 部分/不确定 · ❌ 不支持/高风险
 
@@ -114,7 +114,7 @@
 依据：PMID/DOI 交叉验证 + 三轮核验（Step 3.0 + 5.0 + 9.0）。详见 [SKILL.md Step 3.0](SKILL.md)
 
 **2. 动态N基分批核验**
-特色：N<35 时，逐篇验证（覆盖 100%）；N≥35 时，批量在 N/2 处触发，每批抽查 ≥50%。
+特色：验证强度随目标参考文献数量 N 动态调整。若 N < 35，逐篇核验每篇文献（覆盖率 100%）；若 N ≥ 35，则在 N/2 处启动分批机制，每批抽检比例不低于 50%，且向上取整。
 重要性：固定阈值对小规模综述过度抽查，对大规模综述覆盖不足。
 依据：比例式分配，确保任意规模综述均具一致覆盖。详见 [SKILL.md Step 3.1](SKILL.md)
 
@@ -126,7 +126,7 @@
 **4. 段落前 Section Brief**
 特色：写作每个段落前，Claude 输出当前段落的 Section Brief，包含写作逻辑、核心论点、证据依据、字数预算。
 重要性：在生成文本前强制论证段落逻辑，及早发现结构错误。
-依据：详见 [SKILL.md Step 5.0](SKILL.md)
+依据：强制显式参数设计；允许用户在投入资源前进行重定向。详见 [SKILL.md Step 5.0](SKILL.md)
 
 **5. 分批输出协议**
 特色：大体输出按平台分批分发，带续传标记 [OUTPUT PART X/N]。
@@ -136,7 +136,7 @@
 **6. 多数据库可复现检索记录**
 特色：支持 PubMed / WOS / ScienceDirect / Wiley / Embase，完整记录包含检索日期、数据库版本、完整 Boolean 查询字符串及去重前后结果计数（9 项）。
 重要性：可复现性是科学的核心价值，同行评审者日益要求提供完整检索记录。
-依据：Step 2.8 九项记录。详见 [SKILL.md Step 2.8](SKILL.md)
+依据：步骤2.8：九项记录支持独立搜索复制。详见 [SKILL.md Step 2.8](SKILL.md)
 
 **7. 基因/蛋白质命名规范**
 特色：人类基因全大写斜体（HGNC），小鼠基因首字母大写余小写斜体（MGI），蛋白质非斜体（UniProt），写作前核验。
@@ -144,14 +144,14 @@
 依据：HGNC / GeneCards / MGI / UniProt。详见 [SKILL.md Core Rules](SKILL.md)
 
 **8. 独立模块 Word 输出**
-特色：图注、表格、缩略词表各自输出为独立 Word 文件，随正文一同提交。
+特色：除主文稿外，图注、表格及缩略词表均按目标期刊格式分别导出为独立的word文件。
 重要性：大多数药学期刊要求表格和图表分别提交，内联将导致投稿错误。
 依据：三个独立 .docx 文件：06_figure_legends.docx、07_tables_standalone.docx、10_abbreviations.docx
 
 **9. 完整 Vancouver / NLM 引用规则**
 特色：内置 vancouver-guide.md 包含 NLM 全部 30 种文献类型格式规则，源自 *Citing Medicine*（NLM 2007，更新 2020）。
 重要性：部分实现缺少常见类型（预印本、博士论文、专利）。
-依据：无外部路径依赖。详见 [Citing Medicine PDF](Citing%20Medicine-The%20NLM%20Style%20Guide%20for%20Authors%2C%20Editors%2C%20and%20Publishers.pdf)
+依据：无外部文件依赖；完整NLM指南已整合至技能文件中。详见 [Citing Medicine PDF](Citing%20Medicine-The%20NLM%20Style%20Guide%20for%20Authors%2C%20Editors%2C%20and%20Publishers.pdf)
 
 **10. 运行日志与审计跟踪**
 特色：pipeline_output/run_log.md 记录每个步骤的用户输入、操作、输出文件及时间戳。
@@ -165,7 +165,7 @@
 ### 本工具能帮您:
 
 - 提供完整19步工作流
-- 强制防幻觉协议
+- 强制防幻觉协议，确保所有引用均可追溯至经核实的来源。
 - 100+篇不溢出上下文文献管理
 - 写作每节前输出Section Brief
 - 基因/蛋白质符号验证(HGNC/MGI/UniProt)
@@ -175,15 +175,15 @@
 - 9项可复现检索记录
 - 运行日志审计跟踪
 
-### 本工具CANNOT帮您:
+### 本工具不能帮您:
 
-- **替代科学判断**，这是不可替代的人类决策
-- **评估文献方法学质量**，只能确认引用匹配，不能评方法学
-- **产生文献外的新假说**
-- **替代同行评審**
-- **保证发表**，它提升结构，不可替代科学贡献
+- **替代科学判断**，哪些论文应重点突出、如何处理相互矛盾的证据，以及综述持何种立场——这是不可替代的人类决策。
+- **评估文献方法学质量**，它可以确认该论文确实存在，且所引用的主张与论文内容一致；但无法评估论文的研究方法是否严谨。
+- **产生的新假说**，超出所引用文献明确支持的范围。
+- **取代同行评审、编辑评估或机构监督**。
+- **保证发表**，它优化的是结构与格式，而非科学贡献本身。
 
-> **关于批判性思考：** 工具强制框架，您提供科学。请对 AI 生成草稿保持严格的批判性审视。
+> **关于批判性思考：** 这项技能是精密工具，而非智力参与的替代品。叙述性综述最宝贵的贡献——整合机制性证据、识别知识空白、批判评估矛盾发现——无法被自动化，也绝不可假手于人。这项技能构建的是学术框架，而科学内核由你来赋予。请将每一份AI生成的初稿视为严谨修订的起点，而非最终成品。
 
 ---
 
@@ -218,7 +218,7 @@ Step 4.0    框架 -> 确认 -> LOCK
 Step 5.0    逐节写作  (Section Brief)
 Step 5.5    跨节一致性检查               [原 Step 4.5]
 Step 6.0    结论
-Step 6.5    摘要                                [v2.1 NEW]
+Step 6.5    摘要 (结构化或非结构化)               [v2.1 NEW]
 Step 6.6    Keywords (MeSH)                        [v2.1 NEW]
 Step 7.0    图绘制指令 + 图注(.docx)
 Step 8.0    表格(.docx)
@@ -241,10 +241,11 @@ B) English  (交互稿件均英文)
 ```
 工作目录: C:/Users/YourName/Documents/MyReview
 字数: 5000  (推荐: 4000-6000)
-图表: 3 / 2
-文献: 100
-引用格式: Vancouver
-投稿期刊: [期刊名]
+图数量: 3
+表数量: 2
+文献: 100 (默认100)
+引用格式: Vancouver (默认Vancouver, 或AMA, APA, 期刊特定格式)
+投稿期刊: [期刊名] (如Cell, Nature, Science, Lancet)
 ```
 
 **Step 2.0 -- 检索策略**
@@ -252,17 +253,21 @@ B) English  (交互稿件均英文)
 数据库: PubMed (默认); WOS, ScienceDirect, Wiley, Embase
 年限: 2015-2026
 文献类型: 原始研究, 综述, 临床试验
+检索语言: 英语
 排除: 预印本、会议摘要、社论
 ```
 
 **Step 4.0 -- LOCK**
 ```
-输入LOCK 锁定框架
-或: "将第2节移至第1节之前"
+审阅上述拟议框架。输入 LOCK 以确认并锁定框架。或提出修改建议，例如：  
+“将第2节移至第1节之前”  
+“将第3节重命名为：[作为总结性陈述的新标题]”  
+“在1.2项下新增关于[主题]的子章节”
 ```
 
 **Step 5.0 -- 节确认**
 ```
+阅读本节概要及草稿后：
 CONFIRM  -- 接受
 REVISE   -- 修改
 REWRITE  -- 重写
@@ -272,6 +277,7 @@ REWRITE  -- 重写
 ```
 自动: Claude 编辑清单
 手动: 自己在引用管理器中格式化
+格式：Vancouvers格式（或填写步骤 1.0 中确认的替代格式）
 ```
 
 ---
@@ -280,27 +286,30 @@ REWRITE  -- 重写
 
 | 文件 | 路径 | 内容 |
 |---|---|---|
-| 运行日志 | `pipeline_output/run_log.md` | 全程审计跟踪 |
-| 语言 | `pipeline_output/00_language.md` | 语言选择 |
-| 前置检查 | `pipeline_output/00_preflight_check.md` | 依赖和网络状态 |
-| 项目配置 | `pipeline_output/00_project_config.md` | 所有参数 |
-| 检索策略 | `pipeline_output/01_search_strategy.md` | 9项可复现记录 |
-| 文献清单 | `pipeline_output/01_reference_list.md` | PMID/DOI |
+| 运行日志 | `pipeline_output/run_log.md` | 完整会话日志：输入、操作、时间戳 |
+| 语言 | `pipeline_output/00_language.md` | 交互语言选择 |
+| 前置检查 | `pipeline_output/00_preflight_check.md` | 技能与网络状态 |
+| 项目配置 | `pipeline_output/00_project_config.md` | 所有参数、标题、期刊、格式 |
+| 检索策略 | `pipeline_output/01_search_strategy.md` | 完整可复现记录 (9项) |
+| 文献清单 | `pipeline_output/01_reference_list.md` | 所有参考文献及 PMID/DOI |
 | 文献笔记 | `pipeline_output/02_literature_notes.md` | 核验笔记+冲突矩阵 |
 | 知识图谱 | `obsidian_vault/` | 完整知识图谱 |
-| 框架 | `pipeline_output/03_framework.md` | 锁定的大纲 |
-| 段落草稿 | `pipeline_output/04_draft_section_*.md` | 含Section Brief |
+| 论文框架 | `pipeline_output/03_framework.md` | 锁定大纲及参考文献预估 |
+| 章节草稿 | `pipeline_output/04_draft_section_*.md` | 每节一个文件 + 章节简报 |
 | 一致性检查 | `pipeline_output/05.5_cross_section_check.md` | 跨节报告 |
 | 结论 | `pipeline_output/05_conclusion.md` | 结论草稿 |
 | 摘要 | `pipeline_output/05b_abstract.md` | 摘要草稿 |
 | 关键词 | `pipeline_output/05c_keywords.md` | MeSH关键词 |
-| 图指令 | `pipeline_output/06_figure_instructions.md` | 每图绘制指令 |
-| 图注 | `pipeline_output/06_figure_legends.docx` | 独立Word |
-| 表格 | `pipeline_output/07_tables_standalone.docx` | 独立Word |
+| 图指令 | `pipeline_output/06_figure_instructions.md` | 图绘制指令 |
+| 图注 (Docx) | `pipeline_output/06_figure_legends.docx` | 独立Word |
+| 图注 (Txt) | `pipeline_output/06_figure_legends.txt` | 纯文本图注 |
+| 表格 (Md) | `pipeline_output/07_tables_standalone.md` | Markdown格式汇总表 |
+| 表格 (Docx) | `pipeline_output/07_tables_standalone.docx` | 独立Word |
 | 参考文献 | `pipeline_output/08_references_final.md` | 完整格式化列表 |
-| 终稿txt | `pipeline_output/09_final_manuscript.txt` | 纯文本 |
-| 终稿docx | `pipeline_output/09_final_manuscript.docx` | 主文Word |
-| 缩略词表 | `pipeline_output/10_abbreviations.docx` | 独立Word |
+| 终稿 (Txt) | `pipeline_output/09_final_manuscript.txt` | 完整纯文本手稿 |
+| 终稿 (Docx) | `pipeline_output/09_final_manuscript.docx` | 主文Word |
+| 缩略词表 (Md) | `pipeline_output/10_abbreviations.md` | Markdown格式缩略语表 |
+| 缩略词表 (Docx) | `pipeline_output/10_abbreviations.docx` | 独立Word |
 | 安全日志 | `pipeline_output/10_selfcheck_log.md` | QA记录 |
 
 ---
@@ -323,7 +332,7 @@ Keywords (5-8 MeSH)
 
 | 格式 | 状态 | 说明 |
 |---|---|---|
-| Vancouver/NLM | 默认 | 完整30种类型内置 | 
+| Vancouver/NLM | 默认 | 完整30种类型内置。详见 [Citing Medicine PDF](Citing%20Medicine-The%20NLM%20Style%20Guide%20for%20Authors%2C%20Editors%2C%20and%20Publishers.pdf) | 
 | AMA | 支持 | Step 1.0提供URL |
 | APA | 支持 | Step 1.0提供URL |
 | 期刊定制 | 支持 | 提供示例URL |
@@ -362,15 +371,17 @@ Keywords (5-8 MeSH)
 主要: 临床药理学 + 基础药理机制研究
 
 - 药物作用机制 (受体结合、酶抑制、转运体)
-- 信号通路与分子靶点（NF-kB / PI3K / MAPK / JAK-STAT / mTOR）
+- 信号通路与分子靶点（NF-kB / PI3K / Akt / MAPK / JAK-STAT / mTOR）
 - 药代动力学（ADME，药物相互作用）
 - 药物毒性机制（肾毒性、心脏毒性、肝毒性）
-- 构效关系(SAR)
+- 构效关系(SAR)和分子药理学
 - 药物基因组学/精准医学
 
 ---
 
 ## 安装方式
+
+### 前置基础
 
 | 依赖 | 必需 | 用途 |
 |---|---|---|
@@ -379,9 +390,26 @@ Keywords (5-8 MeSH)
 | docx skill | 可选 | Word输出 (Step 10.0) |
 | Obsidian | 推荐 | 知识图谱 (Step 3.5) |
 
+### Git 安装
+
 ```bash
-git clone https://github.com/YOUR/narrative-review-skill.git ~/.claude/skills/narrative-review
+git clone https://github.com/YOUR USERNAME/narrative-review-skill.git ~/.claude/skills/narrative-review
 ```
+
+### 手动安装
+
+```bash
+mkdir -p ~/.claude/skills/narrative-review
+cp *.md LICENSE ~/.claude/skills/narrative-review/
+```
+
+### 安装验证
+
+在 Claude Code 或 Kiro CLI 中输入：
+```
+write a narrative review about [your topic]
+```
+该技能应在第0.0步（语言选择）自动触发。
 
 ---
 
@@ -436,6 +464,8 @@ narrative-review/
 +-- SKILL.md  # 主工作流推进(v2.1, 19步骤)
 +-- README.md  # 英文README
 +-- README_zh.md  # 本文件，中文README
++-- LICENSE                     # MIT许可证
+|
 +-- vancouver-guide.md  # NLM 30种引用类型(55KB)
 +-- preflight-check.md  # 依赖扫描逻辑(v2.1)
 +-- quality-checklist.md  # 验收清单(v2.1, 扩展Word文件检查)
@@ -465,9 +495,9 @@ narrative-review/
 - 所有内容的科学准确性与学术诚信
 - 所有引用的最终核实
 - 符合目标期刊投稿指南与伦理标准
-- 出版所需的同行评審与修订
+- 出版所需的同行评审与修订
 
-该工具是写作辅助，不能替代领域专业知识、独立批判思考或学术判断。
+该工具为写作辅助手段，无法替代专业领域知识、独立批判性思维或学术判断力。请务必以对待其他研究工具的同等严谨态度，审核AI生成的内容。
 
 ---
 
@@ -497,15 +527,16 @@ narrative-review/
 
 ### v2.1 -- 2026-07-09
 
-本次重大更新将11步骤基础框架升级为19步骤生产级工作流，整合34条原始需求, 6条追加需求, 8项架构修复, 20项一致性改进
+本次重大更新将技能从原有的11步框架升级为完整的19步生产级工作流。更新整合了通过全面梳理技能规范系统性识别出的34项原始用户需求、6项新增需求、8项架构设计修复以及20项后期分析一致性优化。
 
-**新增:** Step 0.0 语言选择, 0.0b 平台选择, 0.9 标题确认, 6.5 摘要, 6.6 MeSH关键词, 分批输出协议, Section Brief, 动态N分批核验, 运行日志, 多数据库检索, 独立Word输出, 基因蛋白质命名; **变更:** Step 4.5重命名为5.5，Vancouver内置，无外部路径依赖; **修正：** 核验率阈值统一（90% 返工底线 / 95% 目标），文件名 04.5 → 05.5。
+**新增：**步骤0.0（语言选择）、步骤0.0b（平台选择以实现最大令牌管理）、步骤0.9（标题确认并支持成稿后修订）、步骤6.5（摘要——结构化或非结构化）、步骤6.6（MeSH关键词）、批量输出协议（兼容DeepSeek/Claude）、多智能体上下文策略、章节简报（每节写作前明确撰写逻辑+核心论点+证据依据）、基于动态N值的批量校验机制（取代所有固定阈值）、自步骤0.0起的全流程运行日志、多数据库检索支持（PubMed + WOS + ScienceDirect + Wiley + Embase）、图注/表格/缩略词独立Word输出、基因/蛋白质命名规范强制应用（HGNC、MGI、UniProt）、三轮引文核验；
+**调整：**步骤4.5更名为步骤5.5（跨章节一致性检查，调整至所有章节撰写完成后执行），温哥华/NLM引文规则迁移至内部vancouver-guide.md文件（完整合并NLM《Citing Medicine》，消除外部路径依赖），Obsidian列为推荐依赖项，运行日志初始化提前至步骤0.0；
+**修复：**统一校验率阈值（90%回退阈值/95%目标值），修正跨章节检查文件名（04.5改为05.5），全部40项需求在需求追溯表中完整可查，《常见错误表》清理开发者注释，所有Word输出章节统一明确段落对齐方式。
 
 ### v1.0 -- 2026-06-30
 
-初始版本发布. 建立11步骤核心工作流，包含零虚构引用、双轨上下文架构，Obsidian知识图谱生成，Vancouver格式，冲突证据矩阵，13篇方法学文献。
-
-**新增:** 11步骤完整工作流, 零虚构协议, 知识图谱, Vancouver引用格式, 关键条件检验和人工关口
+临床药理学与基础药理机制研究领域“叙事性综述写作技能”首发版本上线。本版本构建了涵盖选题界定至终稿成型的11步核心引导式流程。
+**新增：**完整11步工作流；采用PMID/DOI核验的零虚构参考文献规范；支持Obsidian知识库自动生成（含结构化文献笔记与MOC图谱）；冲突证据矩阵；前置依赖项扫描；结论性陈述强制标题化要求；附单图视觉层级指引的绘图指令模板；温哥华引文格式（正文引用标注[N]置于句末标点前）；双轨上下文管理（流程输出文件+Obsidian知识库）；6维度选题评估体系；基于13篇同行评审方法学文献的研究依据。
 
 ---
 
