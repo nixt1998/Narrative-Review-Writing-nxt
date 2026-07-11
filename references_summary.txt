@@ -129,7 +129,7 @@ Generated: 2026-06-30
 SUMMARY STATISTICS
 ================================================================================
 
-Total references:           13
+Total references:           13 (+ 1 NLM style guide)
 Q1 journals:                 7  (53.8%)
 Q2 journals:                 4  (30.8%)
 Q3 journals:                 2  (15.4%)
@@ -162,6 +162,23 @@ Impact factor values are approximate and based on 2023 Journal Citation Reports
 Quartile rankings are based on the journal's primary JCR category. Some journals
 appear in multiple categories with different quartile rankings; the highest
 quartile is used for sorting.
+
+
+================================================================================
+REFERENCE FORMAT AUTHORITY (NLM book publication -- no JCR journal quartile)
+================================================================================
+
+[REF 14] Patrias K. Citing Medicine: The NLM Style Guide for Authors,
+         Editors, and Publishers. 2nd ed. Bethesda (MD): National Library
+         of Medicine (US); 2007. Updated 2020.
+         Available from: https://www.ncbi.nlm.nih.gov/books/NBK7256/
+
+         Publisher:    National Library of Medicine (NLM), US NIH
+         JCR Quartile: N/A (government book publication, no IF)
+         Key use:      Vancouver/NLM citation format; all 30 document types;
+                       author name rules; punctuation; internet sources
+         In skill:     Incorporated into vancouver-guide.md (2026-07-09)
+                       Operational reference for Steps 1.4 and 9.1
 
 ================================================================================
 End of Reference Summary
